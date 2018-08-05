@@ -11,5 +11,6 @@ module.exports = [
   ['/tag/:tag', 'content/muster'],
   ['/tag/:tag/:page', 'content/muster'],
   ['/:category/:slug', 'content/detail'],
-  ['/:category/:slug/comment', 'content/comment']
+  ['/:category/:slug/comment', 'content/comment'],
+  ['/admin', 'content/admin']
 ];

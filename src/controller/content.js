@@ -183,4 +183,12 @@ module.exports = class extends Base {
     this.assign('content', content);
     return this.display('page');
   }
+
+  /**
+   * 管理后台
+   * @return {[type]} [description]
+   */
+  async adminAction() {
+    return this.display('admin');
+  }
 };

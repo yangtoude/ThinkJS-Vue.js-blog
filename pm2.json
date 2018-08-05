@@ -2,7 +2,7 @@
   "apps": [{
     "name": "blog",
     "script": "production.js",
-    "cwd": "/www/blog",
+    "cwd": "/Users/yangtoude/var/www/thinkjs/pubtsblog",
     "max_memory_restart": "1G",
     "autorestart": true,
     "node_args": [],

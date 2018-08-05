@@ -36,13 +36,13 @@ exports.model = {
   },
   mysql: {
     handle: mysql,
-    database: 'blog',
+    database: 'tsblog',
     prefix: 'ls_',
     encoding: 'utf8',
     host: '127.0.0.1',
     port: '',
     user: 'root',
-    password: '123456',
+    password: 'root1234',
     dateStrings: true
   }
 };
