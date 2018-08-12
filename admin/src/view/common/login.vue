@@ -7,12 +7,12 @@
             <div class="login-top">
                 <Form ref="userInfo" :model="userInfo" :rules="ruleInline">
                     <FormItem prop="username">
-                        <Input @on-enter="login('userInfo')" type="text" v-model="userInfo.username" placeholder="Username">
+                        <Input v-on:on-enter="login('userInfo')" type="text" v-model="userInfo.username" placeholder="Username">
                             <Icon type="ios-person-outline" slot="prepend"></Icon>
                         </Input>
                     </FormItem>
                     <FormItem prop="password">
-                        <Input @on-enter="login('userInfo')" type="password" v-model="userInfo.password" placeholder="Password">
+                        <Input v-on:on-enter="login('userInfo')" type="password" v-model="userInfo.password" placeholder="Password">
                             <Icon type="ios-locked-outline" slot="prepend"></Icon>
                         </Input>
                     </FormItem>
