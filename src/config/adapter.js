@@ -43,7 +43,6 @@ exports.model = {
     port: '',
     user: 'root',
     password: 'root1234',
-    // password: 'root!9*6',
     dateStrings: true
   }
 };
