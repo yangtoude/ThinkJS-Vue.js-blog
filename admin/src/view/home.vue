@@ -24,7 +24,7 @@
             <Col span="8">
             <p class="notwrap">上次登录时间:</p>
             </Col>
-            <Col span="16" class="padding-left-8">{{userInfo.last_login_time|date}}</Col>
+            <Col span="16" class="padding-left-8">{{userInfo.last_login_time|dateformat('YYYY-MM-DD HH:mm:ss')}}</Col>
           </Row>
         </Card>
         </Col>
@@ -58,13 +58,14 @@ export default {
   },
   computed: {
     ...mapState({
-      userInfo: state => state.admin.user.info
+      userInfo: state => state.admin.user.info,
+      lastLoginTime: state => state.admin.user.lastLoginTime
     })
   },
   filters: {
     date: function(value) {
       if (!value) return "";
-      return new Date(value * 1000).toLocaleString();
+      return new Date(value).toLocaleString();
     }
   },
   mounted() {

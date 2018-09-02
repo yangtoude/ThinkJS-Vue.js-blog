@@ -40,7 +40,7 @@ export default {
     return {
       userInfo: {
         username: "",
-        password: ""
+        password: "",
       },
       ruleInline: {
         username: [{ required: true, message: "请填写用户名", trigger: "blur" }],
