@@ -44,6 +44,15 @@ export default {
           }
         },
         {
+          title: "状态",
+          key: "status",
+          render: (h, params) => {
+            const text = params.row.status === 0 ? '草稿' : '已发布';
+
+            return h('span', text);
+          }
+        },
+        {
           title: "阅读量",
           key: "view",
           width: 100,
