@@ -5,3 +5,5 @@ www/uploads
 
 *.sublime-project
 *.sublime-workspace
+
+wwww/static/admin/

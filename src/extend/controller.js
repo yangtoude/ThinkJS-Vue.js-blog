@@ -8,6 +8,7 @@ module.exports = {
      */
   async hook(node, data) {
     const hooks = think.config('hooks');
+    console.log(hooks);
     try {
       if (hooks[node]) {
         for (const i in hooks[node]) {

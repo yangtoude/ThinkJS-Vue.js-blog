@@ -52,7 +52,7 @@ module.exports = class extends BaseRest {
       tag: this.post('tag'),
       type: this.post('type'),
       thumb: this.post('thumb'),
-      view: 0,
+      view: this.post('view'),
       create_time: this.post('create_time') ? (new Date(this.post('create_time'))).getTime() / 1000 : (new Date()).getTime() / 1000,
       modify_time: (new Date()).getTime() / 1000
     };
